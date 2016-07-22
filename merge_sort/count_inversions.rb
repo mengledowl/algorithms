@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 
+# merge sort that tracks the number of inversions
 # todo: this is a bit sloppy - probably a better way to keep track of inversions than the way I'm doing it here
 class Array
 	attr_accessor :inversions
