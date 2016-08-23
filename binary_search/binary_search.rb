@@ -5,21 +5,19 @@ class Array
 		mid = size/2
 		beginning = 0
 		ending = size - 1
-		index = nil
 
-		while index.nil?
+		while ending >= beginning
 			if self[mid] == val
-				index = mid
+				return mid
 			elsif val < self[mid]
 				ending = mid - 1
 			else
 				beginning = mid + 1
 			end
 
-			return nil if ending < beginning
 			mid = beginning + ((ending - beginning)/2)
 		end
 
-		index
+		nil
 	end
 end
